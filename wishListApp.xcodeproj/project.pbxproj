@@ -16,6 +16,7 @@
 		11740EB71E942313008CF6BC /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11740EB51E942313008CF6BC /* Item+CoreDataClass.swift */; };
 		11740EB81E942313008CF6BC /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11740EB61E942313008CF6BC /* Item+CoreDataProperties.swift */; };
 		11A3F2391E958D530063D1EB /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3F2381E958D530063D1EB /* MaterialView.swift */; };
+		11A3F23E1E96C18F0063D1EB /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3F23D1E96C18F0063D1EB /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		11740EB51E942313008CF6BC /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		11740EB61E942313008CF6BC /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "wishListApp/Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11A3F2381E958D530063D1EB /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		11A3F23D1E96C18F0063D1EB /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +93,9 @@
 		11A3F23A1E958D590063D1EB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				11740EA41E941C1F008CF6BC /* Main.storyboard */,
+				11A3F23D1E96C18F0063D1EB /* ItemCell.swift */,
 				11A3F2381E958D530063D1EB /* MaterialView.swift */,
+				11740EA41E941C1F008CF6BC /* Main.storyboard */,
 				11740EAA1E941C1F008CF6BC /* Assets.xcassets */,
 			);
 			name = View;
@@ -195,6 +198,7 @@
 				11740EA11E941C1F008CF6BC /* AppDelegate.swift in Sources */,
 				11740EB71E942313008CF6BC /* Item+CoreDataClass.swift in Sources */,
 				11A3F2391E958D530063D1EB /* MaterialView.swift in Sources */,
+				11A3F23E1E96C18F0063D1EB /* ItemCell.swift in Sources */,
 				11740EA91E941C1F008CF6BC /* wishListApp.xcdatamodeld in Sources */,
 				11740EB81E942313008CF6BC /* Item+CoreDataProperties.swift in Sources */,
 			);
