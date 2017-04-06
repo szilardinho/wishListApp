@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -46,7 +47,54 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 0
     }
     
-    
+    func attemptFetch() {
+        
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        fetchRequest.sortDescriptors = [dateSort]
+        
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+     
+        do{
+            
+            try controller.performFetch()
+            
+        } catch {
+            
+            let error = error as NSError
+            print("\(error)")
+            
+        }
+        
+    }
 
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController <NSFetchedRequestResult>){
+        
+        tableView.beginUpdates()
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
