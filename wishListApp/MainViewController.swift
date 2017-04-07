@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -67,16 +67,73 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
     }
-
-    func controllerWillChangeContent(_ controller: NSFetchedResultsController <NSFetchedRequestResult>){
+    
+    
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController <NSFetchRequestResult>){
         
         tableView.beginUpdates()
+        
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>){
+        
+        tableView.endUpdates()
+        
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?){
+        
+        switch(type) {
+            
+        case.insert:
+            
+            if let indexPath = newIndexPath {
+                
+                tableView.insertRows(at: [indexPath], with: .fade)
+                
+                //insert a new table cell
+                
+            }
+            
+        case.delete:
+            
+            if let indexPath = indexPath {
+                
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                
+                //delete a table cell
+            }
+            
+        case.update:
+            
+            if let indexPath = indexPath {
+                
+                let cell = tableView.cellForRow(at: indexPath) as! ItemCell
+                //update the cell data
+            }
+            
+        case.move:
+            
+            if let indexPath = indexPath {
+                
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+            if let indexPath = newIndexPath {
+                tableView.insertRows(at: [indexPath], with: .fade)
+                
+                //Move cell positions around
+            }
+            
+            
+        }
+        
         
     }
     
     
     
     
+
     
     
     
@@ -86,13 +143,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     
-    
-    
-    
-    
-    
-    
-    
+
     
     
     
