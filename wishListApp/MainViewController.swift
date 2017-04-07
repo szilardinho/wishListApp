@@ -13,6 +13,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    var controller: NSFetchedResultsController<Item>!
 
     
     
@@ -21,6 +23,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        attemptFetch()
+        
 
     }
 
@@ -32,19 +37,46 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt IndexPath: IndexPath) -> UITableViewCell
     {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: IndexPath) as! ItemCell
+        configureCell(cell: cell, indexPath: IndexPath as NSIndexPath)
+        return cell
+                
+    }
+    
+    func configureCell(cell: ItemCell, indexPath: NSIndexPath){
+        
+        let item = controller.object(at: indexPath as IndexPath)
+        cell.configureCell(item:item)
+        
         
     }
     
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+        if let sections = controller.sections {
+         
+            let sectionInfo = sections[section]
+            return sectionInfo.numberOfObjects
+
+        }
+        
         return 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
+        if let sections = controller.sections {
+             return sections.count
+        }
+        
         return 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+        
+        return 150
     }
     
     func attemptFetch() {
@@ -53,11 +85,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let dateSort = NSSortDescriptor(key: "created", ascending: false)
         fetchRequest.sortDescriptors = [dateSort]
         
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+         self.controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
      
         do{
             
-            try controller.performFetch()
+            try self.controller.performFetch()
             
         } catch {
             
@@ -110,6 +142,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 let cell = tableView.cellForRow(at: indexPath) as! ItemCell
                 //update the cell data
+                configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
             }
             
         case.move:
