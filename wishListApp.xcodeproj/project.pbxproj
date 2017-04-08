@@ -13,6 +13,8 @@
 		113BB27C1E997137009AAB28 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2761E997137009AAB28 /* Image+CoreDataProperties.swift */; };
 		113BB27D1E997137009AAB28 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2771E997137009AAB28 /* ItemType+CoreDataClass.swift */; };
 		113BB27E1E997137009AAB28 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2781E997137009AAB28 /* ItemType+CoreDataProperties.swift */; };
+		113BB2801E99762F009AAB28 /* ItemDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB27F1E99762F009AAB28 /* ItemDetailsController.swift */; };
+		113BB2821E997854009AAB28 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2811E997854009AAB28 /* CustomTextField.swift */; };
 		11740EA11E941C1F008CF6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11740EA01E941C1F008CF6BC /* AppDelegate.swift */; };
 		11740EA31E941C1F008CF6BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11740EA21E941C1F008CF6BC /* MainViewController.swift */; };
 		11740EA61E941C1F008CF6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11740EA41E941C1F008CF6BC /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		113BB2761E997137009AAB28 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "wishListApp/Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		113BB2771E997137009AAB28 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		113BB2781E997137009AAB28 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemType+CoreDataProperties.swift"; path = "wishListApp/ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113BB27F1E99762F009AAB28 /* ItemDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsController.swift; sourceTree = "<group>"; };
+		113BB2811E997854009AAB28 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = ../CustomTextField.swift; sourceTree = "<group>"; };
 		11740E9D1E941C1F008CF6BC /* wishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11740EA01E941C1F008CF6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = wishListApp/AppDelegate.swift; sourceTree = "<group>"; };
 		11740EA21E941C1F008CF6BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				11A3F23D1E96C18F0063D1EB /* ItemCell.swift */,
+				113BB2811E997854009AAB28 /* CustomTextField.swift */,
 				11A3F2381E958D530063D1EB /* MaterialView.swift */,
 				11740EA41E941C1F008CF6BC /* Main.storyboard */,
 				11740EAA1E941C1F008CF6BC /* Assets.xcassets */,
@@ -134,6 +139,7 @@
 		11A3F23C1E958DFF0063D1EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				113BB27F1E99762F009AAB28 /* ItemDetailsController.swift */,
 				11740EA21E941C1F008CF6BC /* MainViewController.swift */,
 			);
 			name = Controller;
@@ -221,10 +227,12 @@
 				11A3F23E1E96C18F0063D1EB /* ItemCell.swift in Sources */,
 				113BB2791E997137009AAB28 /* Store+CoreDataClass.swift in Sources */,
 				11740EA91E941C1F008CF6BC /* wishListApp.xcdatamodeld in Sources */,
+				113BB2801E99762F009AAB28 /* ItemDetailsController.swift in Sources */,
 				113BB27E1E997137009AAB28 /* ItemType+CoreDataProperties.swift in Sources */,
 				11740EB81E942313008CF6BC /* Item+CoreDataProperties.swift in Sources */,
 				113BB27B1E997137009AAB28 /* Image+CoreDataClass.swift in Sources */,
 				113BB27C1E997137009AAB28 /* Image+CoreDataProperties.swift in Sources */,
+				113BB2821E997854009AAB28 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
