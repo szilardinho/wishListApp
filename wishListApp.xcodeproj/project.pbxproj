@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113BB2791E997137009AAB28 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2731E997137009AAB28 /* Store+CoreDataClass.swift */; };
+		113BB27A1E997137009AAB28 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2741E997137009AAB28 /* Store+CoreDataProperties.swift */; };
+		113BB27B1E997137009AAB28 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2751E997137009AAB28 /* Image+CoreDataClass.swift */; };
+		113BB27C1E997137009AAB28 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2761E997137009AAB28 /* Image+CoreDataProperties.swift */; };
+		113BB27D1E997137009AAB28 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2771E997137009AAB28 /* ItemType+CoreDataClass.swift */; };
+		113BB27E1E997137009AAB28 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BB2781E997137009AAB28 /* ItemType+CoreDataProperties.swift */; };
 		11740EA11E941C1F008CF6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11740EA01E941C1F008CF6BC /* AppDelegate.swift */; };
 		11740EA31E941C1F008CF6BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11740EA21E941C1F008CF6BC /* MainViewController.swift */; };
 		11740EA61E941C1F008CF6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11740EA41E941C1F008CF6BC /* Main.storyboard */; };
@@ -20,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113BB2731E997137009AAB28 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113BB2741E997137009AAB28 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Store+CoreDataProperties.swift"; path = "wishListApp/Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113BB2751E997137009AAB28 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113BB2761E997137009AAB28 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "wishListApp/Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		113BB2771E997137009AAB28 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		113BB2781E997137009AAB28 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemType+CoreDataProperties.swift"; path = "wishListApp/ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11740E9D1E941C1F008CF6BC /* wishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11740EA01E941C1F008CF6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = wishListApp/AppDelegate.swift; sourceTree = "<group>"; };
 		11740EA21E941C1F008CF6BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				11740EB51E942313008CF6BC /* Item+CoreDataClass.swift */,
+				113BB2731E997137009AAB28 /* Store+CoreDataClass.swift */,
+				113BB2751E997137009AAB28 /* Image+CoreDataClass.swift */,
+				113BB2771E997137009AAB28 /* ItemType+CoreDataClass.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -84,6 +99,9 @@
 		11740EBA1E942342008CF6BC /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				113BB2741E997137009AAB28 /* Store+CoreDataProperties.swift */,
+				113BB2761E997137009AAB28 /* Image+CoreDataProperties.swift */,
+				113BB2781E997137009AAB28 /* ItemType+CoreDataProperties.swift */,
 				11740EB61E942313008CF6BC /* Item+CoreDataProperties.swift */,
 			);
 			name = Generated;
@@ -194,13 +212,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113BB27D1E997137009AAB28 /* ItemType+CoreDataClass.swift in Sources */,
 				11740EA31E941C1F008CF6BC /* MainViewController.swift in Sources */,
 				11740EA11E941C1F008CF6BC /* AppDelegate.swift in Sources */,
 				11740EB71E942313008CF6BC /* Item+CoreDataClass.swift in Sources */,
 				11A3F2391E958D530063D1EB /* MaterialView.swift in Sources */,
+				113BB27A1E997137009AAB28 /* Store+CoreDataProperties.swift in Sources */,
 				11A3F23E1E96C18F0063D1EB /* ItemCell.swift in Sources */,
+				113BB2791E997137009AAB28 /* Store+CoreDataClass.swift in Sources */,
 				11740EA91E941C1F008CF6BC /* wishListApp.xcdatamodeld in Sources */,
+				113BB27E1E997137009AAB28 /* ItemType+CoreDataProperties.swift in Sources */,
 				11740EB81E942313008CF6BC /* Item+CoreDataProperties.swift in Sources */,
+				113BB27B1E997137009AAB28 /* Image+CoreDataClass.swift in Sources */,
+				113BB27C1E997137009AAB28 /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

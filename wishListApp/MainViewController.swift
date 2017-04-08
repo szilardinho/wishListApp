@@ -24,6 +24,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
+        generateTestData()
         attemptFetch()
         
 
@@ -85,11 +86,13 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let dateSort = NSSortDescriptor(key: "created", ascending: false)
         fetchRequest.sortDescriptors = [dateSort]
         
-         self.controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        self.controller = controller
      
         do{
             
-            try self.controller.performFetch()
+            try controller.performFetch()
             
         } catch {
             
@@ -161,6 +164,27 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         
+    }
+    
+    
+    func generateTestData(){
+        
+        let item = Item(context: context)
+        item.title = "Macbook Pro"
+        item.price = 2_000
+        item.details = "Definitely need to upgrade to 32 Gigs of RAM, 1TB flash storage with a QuadCore 4.0Ghz Processer and a discrete GPU with the full Adobe suite"
+        
+        let item2 = Item(context: context)
+        item2.title = "Bose Noise Cancelling Headphones"
+        item2.price = 350
+        item2.details = "Studio quality and cancels out noise FTW"
+        
+        let item3 = Item(context: context)
+        item3.title = "Bentley Continental GT"
+        item3.price = 200_000
+        item3.details = "Matte Black, Gold Rims, you know I'm stunting."
+        
+        ad.saveContext()
     }
     
     

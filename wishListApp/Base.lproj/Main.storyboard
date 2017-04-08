@@ -34,7 +34,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.098039215690000001" green="0.53725490200000003" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TKT-T5-wzT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TKT-T5-wzT">
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -43,14 +43,14 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u2o-6p-FKQ" id="hEV-0Y-zYh">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsK-7c-FJL">
-                                                    <rect key="frame" x="8" y="8" width="327" height="133"/>
+                                                    <rect key="frame" x="8" y="8" width="327" height="134"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bentleyContinentalGT" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-Tv-7XG">
-                                                            <rect key="frame" x="8" y="16" width="100" height="100"/>
+                                                            <rect key="frame" x="8" y="16.5" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="hh8-4t-Brl"/>
                                                                 <constraint firstAttribute="width" constant="100" id="pBz-b1-HHn"/>
