@@ -232,6 +232,9 @@
                                 <state key="normal" title="Save Wish">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="bzF-ma-G1a" eventType="touchUpInside" id="6IZ-MS-ALB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
