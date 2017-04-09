@@ -185,6 +185,9 @@
                                     <constraint firstAttribute="width" constant="150" id="cZu-DE-Uql"/>
                                     <constraint firstAttribute="height" constant="150" id="nuV-dA-B6q"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="bzF-ma-G1a" eventType="touchUpInside" id="thx-cb-shx"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nb-RX-rEk" customClass="CustomTextField" customModule="wishListApp" customModuleProvider="target">
                                 <rect key="frame" x="174" y="135" width="185" height="40"/>
@@ -274,6 +277,7 @@
                         <outlet property="detailsField" destination="IJH-sj-TEb" id="nSh-up-F1m"/>
                         <outlet property="priceField" destination="0nb-RX-rEk" id="ofG-go-EAS"/>
                         <outlet property="storePicker" destination="hO7-L6-Kwr" id="YjC-s7-g9R"/>
+                        <outlet property="thumbImage" destination="lRi-0S-7yN" id="qLH-Ia-kA8"/>
                         <outlet property="titleField" destination="gI3-vq-5In" id="ILG-qU-QKh"/>
                     </connections>
                 </viewController>
