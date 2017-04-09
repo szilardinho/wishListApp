@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="u2o-6p-FKQ" customClass="ItemCell" customModule="wishListApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="u2o-6p-FKQ" customClass="ItemCell" customModule="wishListApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u2o-6p-FKQ" id="hEV-0Y-zYh">
@@ -265,6 +265,9 @@
                     <navigationItem key="navigationItem" title="Add | Edit" id="hQM-hW-frl">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="9lM-L5-SUI">
                             <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="bzF-ma-G1a" id="eAX-SD-67P"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
